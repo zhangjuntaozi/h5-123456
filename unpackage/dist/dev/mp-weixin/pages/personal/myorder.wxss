@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.hot_main {
+  height: calc(100vh);
+  background-color: #FFFFFF;
+  padding: 0rpx 32rpx;
+}
+.hot_main .list {
+  padding: 20rpx 0rpx;
+  border-bottom: 2rpx solid #E6E6E6;
+}
+.hot_main .list .labels {
+  color: #CA3C3E;
+  padding: 4rpx 12rpx;
+  background: #FFE7E7;
+  border-radius: 4rpx;
+  display: inline-block;
+  margin-right: 20rpx;
+}
+.hot_main .list .time {
+  color: #939393;
+}
+.hot_main .list .list_b {
+  margin-top: 20rpx;
+}
+

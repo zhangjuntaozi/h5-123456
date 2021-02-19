@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.success {
+  height: calc(100vh - (44px + 64px ));
+  background-color: #F7F7F7;
+  padding: 128rpx 64rpx 0rpx;
+  overflow-y: hidden;
+}
+.success .suc_img {
+  width: 402rpx;
+  height: 318rpx;
+  margin: 0rpx 108rpx;
+}
+.success .suc_tip {
+  margin-top: 48rpx;
+  text-align: center;
+}
+.success .suc_tip text {
+  display: block;
+  padding-bottom: 16rpx;
+}
+.success .suc_btn {
+  width: 622rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #CA3C3E;
+  border: 2rpx solid #CA3C3E;
+  border-radius: 44rpx;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 112rpx;
+}
+

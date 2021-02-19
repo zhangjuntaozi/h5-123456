@@ -1,0 +1,1 @@
+<view class="hot_main"><block wx:for="{{list}}" wx:for-item="item" wx:for-index="__i0__"><view data-event-opts="{{[['tap',[['handler_detail',['$event']]]]]}}" class="list" bindtap="__e"><text class="f18">平城区青矿家属楼停电望恢复</text><view class="list_b"><text class="labels f10">投诉</text><text class="f12 time">2020/12/31 21:52:48</text></view></view></block></view>

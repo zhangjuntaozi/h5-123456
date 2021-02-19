@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 2364202 */
+  src: url('//at.alicdn.com/t/font_2364202_r9netayro9i.eot');
+  src: url('//at.alicdn.com/t/font_2364202_r9netayro9i.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2364202_r9netayro9i.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2364202_r9netayro9i.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2364202_r9netayro9i.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2364202_r9netayro9i.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconleft:before {
+  content: "\e666";
+}
+
+.iconright:before {
+  content: "\e670";
+}
+
+.iconaddress:before {
+  content: "\e671";
+}
+
+.icondelete:before {
+  content: "\e661";
+}
+
+.iconcollect:before {
+  content: "\e662";
+}
+
+.iconupload:before {
+  content: "\e663";
+}
+
+.iconfail:before {
+  content: "\e667";
+}
+
+.iconmore:before {
+  content: "\e66d";
+}
+
+.iconsuccess:before {
+  content: "\e66f";
+}
+

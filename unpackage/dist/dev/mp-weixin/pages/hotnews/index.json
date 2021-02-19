@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "热线动态",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-load-more": "/components/uni-load-more/uni-load-more"
+  }
+}

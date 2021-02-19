@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.contain {
+  border-top: 1px solid #e6e6e6;
+}
+.columns {
+  padding: 0px 32rpx;
+  background-color: #ffffff;
+  margin-bottom: 48px;
+}
+

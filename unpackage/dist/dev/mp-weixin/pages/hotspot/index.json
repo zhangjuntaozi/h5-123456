@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "热点问题",
+  "usingComponents": {
+    "uni-load-more": "/components/uni-load-more/uni-load-more"
+  }
+}

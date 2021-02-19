@@ -1,0 +1,177 @@
+{
+	"pages": [
+		
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "微首页",
+				"navigationStyle":"custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "微提交",
+				"navigationStyle":"custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/appeal/appeal",
+			"style": {
+				"navigationBarTitleText": "诉求查询",
+				"navigationStyle":"custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		 {
+		 	"path": "pages/appeal/detail",
+		 	"style": {
+		 		"navigationBarTitleText": "诉求查询详情",
+				"navigationStyle":"custom",
+		 		"app-plus": {
+		 			// "titleNView": false
+		 		}
+		 	}
+		 },
+		
+		{
+			"path": "pages/index/success",
+			"style": {
+				"navigationBarTitleText": "微提交",
+				"navigationStyle":"custom",
+				"app-plus": {
+					// "titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/personal/index",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"navigationStyle":"custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/personal/info",
+			"style": {
+				"navigationBarTitleText": "个人中心详情",
+				"navigationStyle":"custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/personal/myorder",
+			"style": {
+				"navigationBarTitleText": "我的工单",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/personal/collection",
+			"style": {
+				"navigationBarTitleText": "我的收藏",
+				"navigationStyle":"custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/personal/mydetail",
+			"style": {
+				"navigationBarTitleText": "工单详情",
+				"navigationStyle":"custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/personal/colldetail",
+			"style": {
+				"navigationBarTitleText": "收藏详情",
+				"navigationStyle":"custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/hotspot/index",
+			"style": {
+				"navigationBarTitleText": "热点问题",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/hotspot/detail",
+			"style": {
+				"navigationBarTitleText": "热点问题详情",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/hotnews/index",
+			"style": {
+				"navigationBarTitleText": "热线动态",
+				"enablePullDownRefresh":true,
+				"navigationStyle":"custom",
+				"app-plus": {
+					// "titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/hotnews/detail",
+			"style": {
+				"navigationBarTitleText": "热线动态详情",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#767676",
+		"selectedColor": "#3893FE",
+		"list": []
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		// "navigationStyle":"custom",
+		// "navigationBarTitleText": "平城热线",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#f8f8f8"
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

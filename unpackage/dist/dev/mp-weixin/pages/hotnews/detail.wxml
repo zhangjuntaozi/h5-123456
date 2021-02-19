@@ -1,0 +1,1 @@
+<view class="detail"><text class="title f22">{{infoObject.articleTitle}}</text><view class="flex mt15 f12"><view class="mr16 f12">来源：<text>{{infoObject.articleSource}}</text></view><text>{{$root.g0}}</text></view><view class="article f16 color33"><rich-text nodes="{{infoObject.articleContent}}"></rich-text></view></view>

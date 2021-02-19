@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/index/index",
+    "pages/appeal/appeal",
+    "pages/appeal/detail",
+    "pages/index/success",
+    "pages/personal/index",
+    "pages/personal/info",
+    "pages/personal/myorder",
+    "pages/personal/collection",
+    "pages/personal/detail",
+    "pages/hotspot/index",
+    "pages/hotspot/detail",
+    "pages/hotnews/index",
+    "pages/hotnews/detail"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar": {
+    "color": "#767676",
+    "selectedColor": "#3893FE",
+    "list": []
+  },
+  "uniStatistics": {
+    "enable": false
+  },
+  "usingComponents": {
+    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar",
+    "page-head": "/components/page-head"
+  },
+  "sitemapLocation": "sitemap97.json"
+}

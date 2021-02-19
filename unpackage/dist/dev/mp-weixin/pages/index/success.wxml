@@ -1,0 +1,1 @@
+<view class="success"><image class="suc_img" src="../../static/images/seccess.png" mode="aspectFill"></image><view class="suc_tip"><text class="f16 fontwei6 color33 ">登记成功</text><text class="color33 f12 ">已收到您的诉求，我们将及时为您处理</text></view><view data-event-opts="{{[['tap',[['handler_home',['$event']]]]]}}" class="suc_btn f16" bindtap="__e">回到微首页</view></view>
