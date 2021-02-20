@@ -2,7 +2,7 @@
 	<view class="">
 		<!-- S 自定义头部 -->
 		<view class="example-body">
-			<uni-nav-bar :fixed="true" color="#333333" background-color="#FFFFFF">
+			<uni-nav-bar :fixed="true" color="#333333" background-color="transparent">
 				<navigator slot="left" animation-type="pop-out" animation-duration="300" open-type="navigateBack"><text class="iconfont iconleft f18"></text></navigator>
 			</uni-nav-bar>
 		</view>
@@ -12,7 +12,7 @@
 			<view class="f22 ">{{objectInfo.hotlineAppealTitle}}</view>
 			<view class="flex mb20">
 				<view class="desc">
-					<text class="mrs f12">{{objectInfo.hotlineAppealPerson}}</text>
+					<text class="mrs f12">{{handler_hide(objectInfo.hotlineAppealPerson)}}</text>
 					<text class="time f12">{{objectInfo.hotlineAppealCreateTime}}</text>
 				</view>
 				<!-- <view class="collect collect_active all_color" @click="handler_addcollect(infoObject.articleId)">
@@ -52,7 +52,8 @@ export default {
 		return {
 			objectInfo:{
 				hotlineAppealTitle:''
-			}
+			},
+			
 		};
 	},
 	/*S 监听页面滚动*/
@@ -61,11 +62,37 @@ export default {
 	/*S 初始数据加载*/
 	onLoad(options) {
 		this.objectInfo = JSON.parse( options.list);
+		uni.setNavigationBarTitle({
+			title: this.objectInfo.hotlineAppealTitle
+		});
+		uni.setNavigationBarColor({
+		    frontColor: '#000000',
+		    backgroundColor: '#000000',
+		    animation: {
+		        duration: 400,
+		        timingFunc: 'easeIn'
+		    }
+		})
 	},
 	/*E 初始数据加载*/
 	onShow() {},
 	methods: {
-		
+		/*S 名字隐藏字符*/
+		handler_hide(string) {
+			if (string) {
+				let arrBox = [...string];
+				var str = '';
+				arrBox.map((res, index) => {
+					if (index > 0) {
+						str += '*';
+					} else {
+						str += res;
+					}
+				});
+				return str;
+			}
+		},
+		/*E 名字隐藏字符*/
 	}
 };
 </script>

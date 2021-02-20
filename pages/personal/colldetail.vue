@@ -2,7 +2,7 @@
 	<view>
 		<!-- S 自定义头部 -->
 		<view class="example-body">
-			<uni-nav-bar :fixed="true" color="#333333" background-color="#FFFFFF">
+			<uni-nav-bar :fixed="true" color="#333333" background-color="transparent">
 				<navigator slot="left" animation-type="pop-out" animation-duration="300" open-type="navigateBack"><text class="iconfont iconleft f18"></text></navigator>
 			</uni-nav-bar>
 		</view>
@@ -89,7 +89,12 @@ export default {
 					});
 				}
 			});
-		}
+		},
+		handleBack(){
+			uni.navigateTo({
+				url:'/pages/personal/collection'
+			})
+		},
 	}
 };
 </script>

@@ -29,6 +29,7 @@
 				"app-plus": {
 					"titleNView": false
 				}
+				
 			}
 		},
 		 {
@@ -37,7 +38,7 @@
 		 		"navigationBarTitleText": "诉求查询详情",
 				"navigationStyle":"custom",
 		 		"app-plus": {
-		 			// "titleNView": false
+		 			"titleNView": false
 		 		}
 		 	}
 		 },
@@ -48,7 +49,7 @@
 				"navigationBarTitleText": "微提交",
 				"navigationStyle":"custom",
 				"app-plus": {
-					// "titleNView": false
+					"titleNView": false
 				}
 			}
 		},
@@ -98,7 +99,7 @@
 			"style": {
 				"navigationBarTitleText": "工单详情",
 				"navigationStyle":"custom",
-				"app-plus": {
+				"h5": {
 					"titleNView": false
 				}
 			}
@@ -108,7 +109,7 @@
 			"style": {
 				"navigationBarTitleText": "收藏详情",
 				"navigationStyle":"custom",
-				"app-plus": {
+				"h5": {
 					"titleNView": false
 				}
 			}
@@ -128,7 +129,7 @@
 			"path": "pages/hotspot/detail",
 			"style": {
 				"navigationBarTitleText": "热点问题详情",
-				"app-plus": {
+				"h5": {
 					"titleNView": false
 				}
 			}
@@ -140,7 +141,7 @@
 				"enablePullDownRefresh":true,
 				"navigationStyle":"custom",
 				"app-plus": {
-					// "titleNView": false
+					"titleNView": false
 				}
 			}
 		},
@@ -151,6 +152,12 @@
 				"app-plus": {
 					"titleNView": false
 				}
+				/* "h5": {
+					"titleNView": {
+						"type": "transparent",
+						"buttons": []
+					}
+				} */
 			}
 		}
 	],

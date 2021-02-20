@@ -2,7 +2,7 @@
 	<view>
 		<!-- S 自定义头部 -->
 		<view class="example-body">
-			<uni-nav-bar :fixed="true" color="#333333" background-color="#FFFFFF" @clickLeft="handleBack">
+			<uni-nav-bar :fixed="true" color="#333333" background-color="transparent" @clickLeft="handleBack">
 				<block slot="left"><text class="iconfont iconleft f18 leftback"></text></block>
 			</uni-nav-bar>
 		</view>
@@ -97,7 +97,7 @@
 			</view>
 			<view class="uni-column column">
 				<span class="xh">*</span>
-				<view class="uni-label f16">诉求类别</view>
+				<view class="uni-label f16 label">诉求类别</view>
 				<picker class="uni_picker" mode="selector" :range="pickerDate" :range-key="'hotlineAppealType'" :value="param.hotlineAppealTypeCode" @change="handlerPicker">
 					<view class="f16 all_picker" :class="!param.hotlineAppealTypeCode ? 'pickerCategory' : 'picker_active'">
 						{{ !!param.hotlineAppealTypeCode ? param.hotlineAppealType : '请选择诉求类别' }}
@@ -106,7 +106,7 @@
 			</view>
 			<view class="uni-column column">
 				<span class="xh">*</span>
-				<view class="uni-label f16">事件辖区</view>
+				<view class="uni-label f16 label">事件辖区</view>
 				<picker
 					class="uni_picker"
 					mode="selector"
@@ -141,12 +141,14 @@
 			</view>
 
 			<view class="upload_main  mt14">
-				<view class="upload_title mb15 f16">上传图片</view>
+				<view class="upload_title mb15 f16">
+					上传图片
+					</view>
 				<view class="uni-uploader-body">
 					<view class="uni-uploader__files">
 						<view v-for="(image, index) in imageList" :key="index">
 							<view class="uni-uploader__file" style="position: relative;">
-								<image class="uni-uploader__img" :src="img_url + image.url" :data-src="img_url + image.url" mode="aspectFill" @tap="previewImage"></image>
+								<image class="uni-uploader__img upload_img" :src="img_url + image.url" :data-src="img_url + image.url" mode="aspectFill" @tap="previewImage"></image>
 
 								<image @click="handle_delete_img(image, index)" class="iconfont_dele" src="../../static/images/clear.png" mode=""></image>
 							</view>
@@ -161,7 +163,7 @@
 					<view class="uni-uploader__files">
 						<view v-for="(image, index) in videoList" :key="index">
 							<view class="uni-uploader__file" style="position: relative;">
-								<video class="uni-uploader__img" :src="img_url + image.url" ></video>
+								<video class="uni-uploader__img upload_img" :src="img_url + image.url" object-fit="cover"  controls  :controls="controls"></video>
 								<image @click="handle_delete_video(image, index)" class="iconfont_dele" src="../../static/images/clear.png" mode=""></image>
 							</view>
 						</view>
@@ -187,7 +189,7 @@
 		<view class="back_f7 "></view>
 		<view class=" main mt10 switch-box ">
 			<view class="uni-list-cell uni-list-cell-pd switch-box">
-				<view class="uni-list-cell-db">是否公开</view>
+				<view class="uni-list-cell-db f16">是否公开</view>
 				<switch type="switch" :checked="hotlineAppealIspublic" @change="handle_swith" style="transform:scale(0.8)" />
 			</view>
 		</view>
@@ -247,6 +249,7 @@ export default {
 			cacheStatus: true, //图形验证码是否正确
 			hotlineAppealIspublic: true,
 			code_disabled:true, //获取验证码
+			controls:false,
 		};
 	},
 	onLoad(options) {
@@ -929,10 +932,11 @@ export default {
 		padding-bottom: 30upx;
 	}
 	.upload_main {
-		padding: 14upx 32upx;
+		padding: 14upx 12upx;
 		border-bottom: 2upx solid #e6e6e6;
 		.upload_title {
 			color: #333333;
+			padding-left: 24upx;
 		}
 	}
 	.attachment {
@@ -959,9 +963,14 @@ export default {
 	}
 	.switch-box {
 		border-bottom: none;
+		padding:24upx 38upx;
 	}
 	.file_width {
 		width: 330upx;
+	}
+	.upload_img{
+		width: 210upx;
+		height: 210upx;
 	}
 }
 .tip {

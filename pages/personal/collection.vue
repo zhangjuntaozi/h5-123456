@@ -1,7 +1,11 @@
 <template>
 	<view class="">
 		<!-- S 自定义头部 -->
-		<view class="example-body"><uni-nav-bar :fixed="true" color="#333333" background-color="#FFFFFF" left-icon="back" @clickLeft="handleBack"></uni-nav-bar></view>
+		<view class="example-body">
+			<uni-nav-bar :fixed="true" color="#333333" background-color="transparent"  @clickLeft="handleBack">
+				<block slot="left"><text class="iconfont iconleft f18 leftback"></text></block>
+			</uni-nav-bar>
+		</view>
 		<!-- E 自定义头部 -->
 
 		<view class="hot_main" v-if="articleList.length>0">

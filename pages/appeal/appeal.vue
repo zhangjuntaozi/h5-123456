@@ -2,7 +2,7 @@
 	<view>
 		<!-- S 自定义头部 -->
 		<view class="example-body">
-			<uni-nav-bar :fixed="true" color="#333333" background-color="#FFFFFF"  @clickLeft="handleBack">
+			<uni-nav-bar :fixed="true" color="#333333" background-color="transparent"  @clickLeft="handleBack">
 				<block slot="left"><text class="iconfont iconleft f18 leftback"></text></block>
 			</uni-nav-bar>
 		</view>

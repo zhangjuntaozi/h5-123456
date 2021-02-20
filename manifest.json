@@ -120,8 +120,8 @@
                     }
                 },
                 "/hotline-data-exchange-open-platform-web" : {
-                    "target" : "http://192.168.1.148:7070/hotline-data-exchange-open-platform-web/", 
-                    /* "target": "http://47.92.167.0:4007/hotline-data-exchange-open-platform-web/", */ 
+                   "target" : "http://192.168.1.148:7070/hotline-data-exchange-open-platform-web/",
+                     /* "target": "http://47.92.167.0:4007/hotline-data-exchange-open-platform-web/",  */
                     "changeOrigin" : true,
                     "secure" : false,
                     "pathRewrite" : {

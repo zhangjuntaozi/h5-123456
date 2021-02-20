@@ -74,6 +74,7 @@ export default {
 		} else {
 			var userInfo = uni.getStorageSync('userInfo');
 			if (userInfo.openid) {
+				// 当前时间 - 24小时 
 				var before = (new Date()).getTime() - 24*3600*1000;
 				if(before < userInfo.startTime){
 					this.handler_auth();

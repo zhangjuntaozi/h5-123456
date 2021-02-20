@@ -117,7 +117,7 @@ uni-button:after{
 
 .pickerCategory{
 	color: #939393;
-	padding:14upx 24upx;
+	padding:14upx 26upx;
 }
 /*E 表单*/
 
@@ -158,7 +158,7 @@ uni-button:after{
 	font-size: 28upx!important;;
 }
 .f16 {
-	font-size: 32upx!important;;
+	font-size: 32upx!important;
 }
 .f18 {
 	font-size: 36upx!important;;
@@ -171,6 +171,9 @@ uni-button:after{
 }
 .f33{
 	font-size: 66upx !important;
+}
+.f45{
+	font-size: 90upx !important;
 }
 .fontwei6 {
 	font-weight: 600 !important;
@@ -214,6 +217,9 @@ uni-button:after{
 }
 .color_fail{
 	color: #f14646 !important;
+}
+.colorfff{
+	color: #FFFFFF !important;
 }
 .back_f7{
 	padding: 10upx 0upx;

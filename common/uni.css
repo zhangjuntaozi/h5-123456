@@ -651,8 +651,8 @@ radio-group label, checkbox-group label{
 }
 .uni-uploader__img {
 	display: block;
-	width: 210rpx;
-	height: 210rpx;
+	/* width: 210rpx; */
+	/* height: 210rpx; */
 }
 .uni-uploader__input-box {
 	position: relative;
